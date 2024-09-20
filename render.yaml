@@ -17,7 +17,7 @@ services:
         fromDatabase:
           name: infinite_back
           property: connectionString
-      - key: 5d2a2a556bc081600596c7a2263ebf3c
+      - key: RAILS_MASTER_KEY
         sync: false
       - key: WEB_CONCURRENCY
         value: 2 # sensible default
