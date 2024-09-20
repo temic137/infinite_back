@@ -6,7 +6,7 @@ databases:
 
 services:
   - type: web
-    name: mysite
+    name: infinite_back
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
@@ -17,7 +17,7 @@ services:
         fromDatabase:
           name: infinite_back
           property: connectionString
-      - key: 5d2a2a556bc081600596c7a2263ebf3c
+      - key: RAILS_MASTER_KEY
         sync: false
       - key: WEB_CONCURRENCY
         value: 2 # sensible default
