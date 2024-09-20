@@ -12,9 +12,6 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
-
-  config.assets.compile = true
-
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local = false
 
@@ -32,6 +29,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for Apache
   # config.action_dispatch.x_sendfile_header = "X-Accel-Redirect" # for NGINX
 
+  config.assets.compile = true
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
